@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 
 def linear_regression(x_value, y_value):
     """
-    the The Pearson Correlation Coefficient between total cases and total recipients is close to 1,
+    The Pearson Correlation Coefficient between total cases and total recipients is close to 1,
     the two variables have a positive linear correlation
     the P-value is less than 0.001, there is strong evidence that the correlation is significant
     a linear regression to predict the total number of recipients bases on the total number of cases
