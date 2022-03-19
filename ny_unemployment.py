@@ -2,7 +2,7 @@
 # NY Unemployment Claims
 # Last modified: January, 29 2022
 
-# import pandas library
+# Import dependencies
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -119,6 +119,7 @@ if __name__ == "__main__":
     pa_case_load_close_year = pa_case_load_close.groupby('Year', as_index=False).sum()
 
     pa_case_load_close_year = pa_case_load_close_year.drop(columns=['Month Code', 'District Code'])
+
     for column in ['Month Code', 'District Code']:
         assert column not in pa_case_load_close_year.columns
 
@@ -186,5 +187,3 @@ if __name__ == "__main__":
     plt.legend()
     plt.show()
     plt.close()
-
-    # the close approximated
